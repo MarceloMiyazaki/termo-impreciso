@@ -54,13 +54,15 @@ function jogar(){
         if(palpite[i]==segredo[i]){
             out[0] += 1
             segredo[i] = "!"
+            palpite[i] = "."
         }
     }
 
     for(let i=0;i<5;i++){
-        if(segredo.includes(palpite[i]) && segredo[i]!="!"){
+        if(segredo.includes(palpite[i]) && segredo[i]!=palpite[i]){
             out[1] += 1
             segredo[segredo.indexOf(palpite[i])] = "!"
+            palpite[i] = "."
         }
     }
 
