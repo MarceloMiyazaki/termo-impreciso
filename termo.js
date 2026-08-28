@@ -1,6 +1,6 @@
 let atual = 0
 let linha = 5
-const chave = "telao"
+const chave = "carro"
 
 if(localStorage.getItem("tentou") != null) carregarDados()
 
