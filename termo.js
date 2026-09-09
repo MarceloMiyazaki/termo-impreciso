@@ -51,18 +51,16 @@ function jogar(){
     console.log(palpite)
 
     for(let i=0;i<5;i++){
-        if(palpite[i]==segredo[i]){
+        if(chave[i]==segredo[i]){
             out[0] += 1
             segredo[i] = "!"
-            palpite[i] = "."
         }
     }
 
     for(let i=0;i<5;i++){
-        if(segredo.includes(palpite[i]) && segredo[i]!=palpite[i]){
+        if(segredo.includes(palpite[i]) && chave[i]!=palpite[i]){
             out[1] += 1
             segredo[segredo.indexOf(palpite[i])] = "!"
-            palpite[i] = "."
         }
     }
 
