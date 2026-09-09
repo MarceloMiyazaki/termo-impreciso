@@ -51,7 +51,7 @@ function jogar(){
     console.log(palpite)
 
     for(let i=0;i<5;i++){
-        if(chave[i]==segredo[i]){
+        if(chave[i]==palpite[i]){
             out[0] += 1
             segredo[i] = "!"
         }
